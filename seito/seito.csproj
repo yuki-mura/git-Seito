@@ -124,6 +124,7 @@
       <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <None Include="ViewModels\Seito" />
     <Compile Include="Views\SeitoListPage.xaml.cs">
       <DependentUpon>SeitoListPage.xaml</DependentUpon>
     </Compile>

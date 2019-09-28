@@ -1,5 +1,5 @@
 ﻿<Page
-    x:Class="seito.Views.SeitoListPage"
+    x:Class="Seito.Views.SeitoListPage"
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     xmlns:local="using:seito.Views"
@@ -10,14 +10,16 @@
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
     <Grid>
-        <mtuuc:DataGrid>
+        <mtuuc:DataGrid
+            ItemsSource="{x:Bind Seito.ViewModels.Seito}"
+            >
             <mtuuc:DataGrid.Columns>
                 <mtuuc:DataGridTextColumn
-                    Binding="{Binding ShiMei}"
+                    Binding="{Binding Shimei}"
                     Header="氏名"
                     />
                 <mtuuc:DataGridTextColumn
-                    Binding="{Binding JuSho}"
+                    Binding="{Binding Jusho}"
                     Header="住所"
                     />
             </mtuuc:DataGrid.Columns>
